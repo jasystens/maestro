@@ -1,0 +1,21 @@
+appId: com.qazandoqafood
+---
+- runFlow: login.yaml
+#- startRecording: fluxo de login
+#clearState = true
+- tapOn: 'Selecione seu endereço...'
+- assertVisible: 'PERMITIR'
+- tapOn:
+    id: 'android:id/button1'
+- tapOn: 'Pastelaria da Maria'
+- tapOn:
+    id: 'com.android.systemui:id/mobile_signal'
+- tapOn:
+    point: '95%,47%'
+- tapOn:
+    id: 'qtd-itens'
+- tapOn: 'CONFIRMAR PEDIDO'
+- scroll
+- tapOn: 'Dinheiro'
+- tapOn: 'FAZER PEDIDO'
+- assertVisible: 'Pedido realizado'

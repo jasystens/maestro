@@ -1,0 +1,6 @@
+appId: com.qazandoqafood
+---
+- launchApp
+#- startRecording: fluxo de login
+- tapOn:
+    id: 'password'

@@ -1,0 +1,10 @@
+appId: com.qazandoqafood
+---
+- launchApp
+#- startRecording: fluxo de login
+- repeat:
+    while:
+      notVisible: 'Erro ao realizar ' # este texto nao existe, entao vai gerar um click infinito na aplicacao
+    commands:
+      - tapOn: 'Entrar'
+#- stopRecording # funciona mas deixa o arquivo dentro do emulador

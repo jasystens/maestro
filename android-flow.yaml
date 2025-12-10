@@ -1,0 +1,46 @@
+appId: com.qazandoqafood
+---
+- launchApp
+#- startRecording: fluxo de login
+- tapOn:
+    id: 'email'
+- assertVisible: 'E-mail'
+- inputText: teste@teste.com
+- tapOn:
+    id: 'password'
+- inputText: 123456
+- hideKeyboard
+- tapOn: 'ENTRAR'
+- scroll
+- tapOn:
+    id: 'search-field'
+- inputText: Shushi Home
+- hideKeyboard
+- assertVisible:
+    text: 'Shushi Home'
+    index: 1
+- tapOn:
+    point: '57%,81%'
+- tapOn:
+    text: 'Shushi Home'
+    index: 1
+- assertVisible: 'Ops... Selecione o endereço para continuar'
+- tapOn:
+    id: 'android:id/button1'
+#- hideKeyboard # Este comando fecha o teclado virtual
+#- timeout: 100000
+#- tapOn: 'Botão de Login'
+#- tapOn:
+#   id: 'com.google.android.inputmethod.latin:id/icon'
+#    index: 5
+#- tapOn: "Shushi Home"
+#- scrollUntilVisible:
+#    element: 'Sushi Home' # or any other selector
+#    direction: DOWN
+#    timeout: 100000
+#    speed: 20
+#- stopRecording
+#- runFlow:
+#   when:
+#    visible: 'Shushi Home'
+#  file: 'Subflow.yaml'

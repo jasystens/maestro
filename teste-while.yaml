@@ -1,0 +1,10 @@
+appId: com.qazandoqafood
+---
+- launchApp
+- startRecording: fluxo de login
+- repeat:
+    while:
+      notVisible: 'Erro ao realizar login'
+    commands:
+      - tapOn: 'Entrar'
+- stopRecording # funciona mas deixa o arquivo dentro do emulador

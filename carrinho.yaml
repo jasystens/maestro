@@ -1,0 +1,30 @@
+appId: com.qazandoqafood
+---
+- launchApp
+#- startRecording: fluxo de login
+#clearState = true
+- tapOn:
+    id: 'email'
+- assertVisible: 'E-mail'
+- inputText: teste@teste.com
+- tapOn:
+    id: 'password'
+- inputText: 123456
+- hideKeyboard
+- tapOn: 'ENTRAR'
+- tapOn: 'Selecione seu endereço...'
+- assertVisible: 'PERMITIR'
+- tapOn:
+    id: 'android:id/button1'
+- tapOn: 'Pastelaria da Maria'
+- tapOn:
+    id: 'com.android.systemui:id/mobile_signal'
+- tapOn:
+    point: '95%,47%'
+- tapOn:
+    id: 'qtd-itens'
+- tapOn: 'CONFIRMAR PEDIDO'
+- scroll
+- tapOn: 'Dinheiro'
+- tapOn: 'FAZER PEDIDO'
+- assertVisible: 'Pedido realizado'

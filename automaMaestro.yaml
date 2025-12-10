@@ -1,0 +1,8 @@
+appId: com.qazandoqafood
+---
+- runFlow: subflows/sub.yaml # este cara vai rodar sub.yaml
+# que e clicar no password
+#- launchApp # como estamos chamando um fluxo ja existente nao precisa mais deste comando
+#- startRecording: fluxo de login
+- tapOn:
+    id: 'email'
