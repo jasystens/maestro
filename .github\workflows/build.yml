@@ -1,0 +1,31 @@
+name: Build and run Maestro tests (Native Android)
+
+on:
+  push:
+    branches: 
+      - master
+  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    container:
+      image: docker.io/cypress/browsers
+    
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
+       
+        name: Set up Node.js
+        uses: actions/setup-node@v2
+
+        with:
+          java-version: 11
+          distribution: 'temurin'
+      
+      - uses: mobile-dev-inc/action-maestro-cloud@v1
+        with:
+          api-key: 5Ye9lbSaIJXAjupZNwbObKk9SAc1UPDy7+Odu7aAvGI
+          app-file: qazandoqafood.apk
+          
