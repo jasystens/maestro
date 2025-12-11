@@ -19,13 +19,11 @@ jobs:
        
         name: Set up Node.js
         uses: actions/setup-node@v2
-
-        with:
-          java-version: 11
-          distribution: 'temurin'
+        with: 
+          node-version:14
       
-      - uses: mobile-dev-inc/action-maestro-cloud@v1
+      - uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
         with:
-          api-key: 5Ye9lbSaIJXAjupZNwbObKk9SAc1UPDy7+Odu7aAvGI
+          api-key: rb_E8v2oOlcjbOA7IKLyZS5jKGacLWg7iy3iN4SgvfSPjHjBbjsMzUm2M1GxTOCrif1Y4aY1cYRoTzJgzPQ86C6x6GJmxuWQXxgKWh
           app-file: qazandoqafood.apk
           
