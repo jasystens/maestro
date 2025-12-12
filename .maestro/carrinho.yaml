@@ -1,7 +1,6 @@
 appId: com.qazandoqafood
 ---
 - launchApp
-#
 #- startRecording: fluxo de login
 #clearState = true
 - tapOn:
