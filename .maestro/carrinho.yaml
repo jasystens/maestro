@@ -1,6 +1,7 @@
 appId: com.qazandoqafood
 ---
 - launchApp
+# somente comentario
 #- startRecording: fluxo de login
 #clearState = true
 - tapOn:
