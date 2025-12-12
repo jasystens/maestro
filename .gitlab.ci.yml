@@ -1,0 +1,11 @@
+image: docker.io/qazando/appium-maven
+
+stages:          
+  - test
+
+Jaça-job:       
+  stage: test
+  script:
+    - curl -Ls "https://get.maestro.mobile.dev" | bash
+    - export PATH="$PATH":"$HOME/.maestro/bin"
+    - maestro cloud --apiKey rb_K3wochNOVbEIa9YhKr9gEu3u6x8nxHy5btuqYdgSv5MeZ01mXqK1hypM97xbGf5yiKqf8H3nx9cp56JC97nOWmjcnjv8IoEDEn7 qazandoqafood.apk .maestro/

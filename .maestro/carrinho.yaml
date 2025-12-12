@@ -1,6 +1,7 @@
 appId: com.qazandoqafood
 ---
 - launchApp
+#
 #- startRecording: fluxo de login
 #clearState = true
 - tapOn:
@@ -9,7 +10,7 @@ appId: com.qazandoqafood
 - inputText: teste@teste.com
 - tapOn:
     id: 'password'
-- inputText: 123456
+    - inputText: 123456
 - hideKeyboard
 - tapOn: 'ENTRAR'
 - tapOn: 'Selecione seu endereço...'
