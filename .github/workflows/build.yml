@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: 14
 
-      - uses: mobile-dev-inc/action-maestro-cloud@v1
-        with:
-          api-key: rb_oiEoV5u1pHnsOIfsA6seGpllbZRSYCRC6f8ReCE7yDEjoKHtllJxRiGakYjmeizIXqLVHZEqxdoNiannF0sRL7XqFeCoQJiU4GO
+          #- uses: mobile-dev-inc/action-maestro-cloud@v1
+          # with:
+          # api-key: rb_oiEoV5u1pHnsOIfsA6seGpllbZRSYCRC6f8ReCE7yDEjoKHtllJxRiGakYjmeizIXqLVHZEqxdoNiannF0sRL7XqFeCoQJiU4GO
           # note that you can supply the project id any way you like, it is not secret
-          project-id: proj_01kbn687vafgzbs2ywzttq87c8
+          #project-id: proj_01kbn687vafgzbs2ywzttq87c8
           app-file: qazandoqafood.apk
