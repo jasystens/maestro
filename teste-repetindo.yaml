@@ -1,9 +1,9 @@
 appId: com.qazandoqafood
 ---
 - launchApp
-- startRecording: fluxo de login
+#- startRecording: fluxo de login
 - repeat:
     times: 3
     commands:
       - tapOn: 'Entrar'
-- stopRecording
+#- stopRecording
